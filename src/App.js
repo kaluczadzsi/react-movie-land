@@ -5,15 +5,6 @@ import SearchIcon from './search.svg';
 
 const API_URL = 'http://www.omdbapi.com?apikey=610450d5';
 
-const movie1 = {
-  Title: 'Naruto: Shippuden',
-  Year: '2007–2017',
-  imdbID: 'tt0988824',
-  Type: 'series',
-  Poster:
-    'https://m.media-amazon.com/images/M/MV5BZGFiMWFhNDAtMzUyZS00NmQ2LTljNDYtMmZjNTc5MDUxMzViXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg',
-};
-
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -26,7 +17,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies('naruto');
+    searchMovies('Dragon ball');
   }, []);
 
   return (
